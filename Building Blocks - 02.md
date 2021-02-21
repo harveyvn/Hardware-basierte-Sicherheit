@@ -1,6 +1,6 @@
 # Physically Unclonable Functions
 
-## Questions:
+## Questions
 
 1. How do manufacturing variations make hardware unique?
 2. Which types of Physically Unclonable Functions exist?

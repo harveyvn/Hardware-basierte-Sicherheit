@@ -75,7 +75,7 @@
 
 - The output of PRNGs should be indistinguishable from random output
 - Uniformity: the probability of the next bits must be equally probable
-- Consistency: the occurrence of one bit must be independent of the occurrence of another bit
+- Consistency: characteristics of sequence must be independent of the seed
 - Unpredictability: it is difficult to predict next bit ==(test by Next-bit test)==
 - Forward security: given a state of generator, it is hard to predict the prev. outputs. ==(see Backtracking attack)==
 

@@ -111,7 +111,7 @@
 
 - **Category**: Behavioral/functional Level
 - **Work**: 
-  - Code is written in high-level language. Payload is triggered by conditions or a loop inserted in the code
+  - Code is written in high-level language. Payload is triggered by **conditions or a loop** inserted in the code
 - **Category**: Multiplexer
 - **Work**: 
   - At the gate level, multiplexer can be **tampered** by additional inputs which can change its behavior

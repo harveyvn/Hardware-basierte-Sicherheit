@@ -7,8 +7,8 @@
 
 ### 2. Implementation:
 
-- [ ] Hardware Trojans
-- [ ] Side Channel Attacks, Countermeasures, Efficient Implementations
+- [x] Hardware Trojans
+- [x] Side Channel Attacks, Countermeasures, Efficient Implementations
 
 ### 3. Trusted Platforms:
 
