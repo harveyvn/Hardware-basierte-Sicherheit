@@ -11,7 +11,7 @@
 
 - Attestation reports are **aggregated** among **provers**
 
-#### 2.1. Approach
+#### 2.1. Protocol
 
 - Attestation **challenge** is **broadcasted** to all **provers**
 - A **virtual spanning tree topology** is arranged in the network
@@ -47,7 +47,7 @@
 ### 4. Report Aggregation
 
 - Device Identifier List
-- Attestation Proof
+- **Attestation Proof**
 
 ### 5. Novel Techniques to Compress Attestation Reports
 
@@ -60,7 +60,7 @@
 
 - To physically attack a device, an attacker needs to take the device offline for amount of time
 - All **devices share** **a session key** which is **replaced periodically**
-- **Physically compromised device** cannot obtain the newest session key, which is used for attestation
+- **Physically compromised device** cannot obtain the **newest session key**, which is used for **attestation**
 
 ### 2. SCAPI Protocol
 
@@ -71,7 +71,7 @@
   - $sk_{next}$  is only obtained by devices which hold newest $sk_{cur}$ 
   - After each session period $\delta$, devices update $sk_{cur} := sk_{next}$
 - Attestation phase:
-  - **Operator** executes existing **collective SW attestation protocol**
+  - **Operator** executes existing **Collective SW Attestation Protocol**
   - Devices **authenticate and encrypt** all **communication** using $sk_{cur}$
   - **Detect** devices with **compromised SW** 
 
