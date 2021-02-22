@@ -26,7 +26,33 @@
 
 ## II. Attestation of Dynamic Networks
 
+### 1. Goals
 
+- Prevent **physical** attack: DoS attacks
+- Work for **Dynamic Network** and **Disruptive Network Topology**
+- Work for **Low-end embedded devices**
+
+### 2. Approach
+
+- **Minimize communication** between devices
+- Apply **Disruptive-tolerant Networking Techniques**
+- **Individual authenticated** attestation **response**
+
+### 3. Distributed Attestation Protocol
+
+- Devices **propagate** **initial message** from **Verifier**
+- **Neighboring** devices **exchange** attestation **proofs**
+- Verifier takes a report from any device and verifies it
+
+### 4. Report Aggregation
+
+- Device Identifier List
+- Attestation Proof
+
+### 5. Novel Techniques to Compress Attestation Reports
+
+- MAC-Smart: **On-demand aggregation** of attestation reports
+- MAC-Truncation: **Tradeoff** between **security** and **performance**
 
 ## III. Attestation of Physical Attacks
 
