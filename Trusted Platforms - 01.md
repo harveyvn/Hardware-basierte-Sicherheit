@@ -156,14 +156,27 @@
 
 ### 2. Assumptions
 
-- Security critical code is isolated in an enclave
-- Only CPU is trusted
-- Enclaves cannot harm the system
+- **Security critical code** is isolated in an **enclave**
+- Trust CPU only
+- Enclaves **not harm** system
 
 ### 3. SGX Enclaves
 
-- Extension of x86 architecture
-- Enclaves are isolated memory regions of code and data
-- Controlled by CPU
-- Memory is protected by encryption and integrity protection
+- x86 architecture **extension**
+- **Isolated memory regions** of code and data
+- **CPU controls** enclaves
+- **Memory** is **protected** by **encryption** and **integrity protection**
 
+#### 3.1. Access Control
+
+- From enclave to the outside
+  - Access to outside will cause exception
+  - All **memory accesses** have to follow **segmentation policies**
+  - **Enclave** **not allow** to **modify** **policies**
+  - Only **unprivileged instructions** available
+- From outside to enclaves
+  - Access to enclave from outside will cause exception
+  - Hardware **prevents jump** to enclave
+  - **No direct access** to **internal** enclave
+- Enclave to enclave
+  - **Secure channels** can be established
