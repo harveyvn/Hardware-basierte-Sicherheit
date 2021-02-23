@@ -1,27 +1,27 @@
-# Convert Channels
+# Covert Channels
 
-## I. Convert Channels
+## I. Covert Channels
 
 ### 1. Definition
 
-- **Communication Paths** that are **neither designed nor intended** to **transfer information** between **system processes**
+- **Communication Paths** that were **neither designed nor intended** to **transfer information** between **system processes**
 
 ### 2. Examples
 
-- **Storage-based** Convert Channel: high process encodes classified info. to **file metadata**
-- **Timing-based** Convert Channel: high process encodes classified info. to **CPU loads**
+- **Storage-based** Covert Channel: high process encodes classified info. to **file metadata**
+- **Timing-based** Covert Channel: high process encodes classified info. to **CPU loads**
 
-### 3. Side Channels vs Convert Channels
+### 3. Side Channels vs Covert Channels
 
 #### 3.1. Side Channels
 
 - **Un**intentional Leakage
 - Electromagnetic Emanation/Power Consumption correlates with a computation
 
-#### 3.2. Convert Channels
+#### 3.2. Covert Channels
 
 - **In**tentional Leakage
-- Convert Channels can **encode and embed** data into **Side Channels Emanation**
+- Covert Channels can **encode and embed** data into **Side Channels Emanation**
 - **Binary payload** will be **encoded** into **distinct computation** to generate **distinct** EE/PC
 
 ### 4. Generic Attack Scenario
@@ -31,26 +31,26 @@
 - **Isolated** from Receiver - **high level** security
 - **Contain** sensitive Data to be **extracted**
 - **Infected** by attacker's code
-- Attacker's code can **encode** data and **transmit** via Convert Channel
+- Attacker's code can **encode** data and **transmit** via Covert Channel
 
 #### 4.2. Receiver
 
 - **Isolated** from Transmitter - **low level** security
 - **Controlled** by attacker's code
-- **Monitor** Convert Channel to **capture** Signal's **Preamble**
+- **Monitor** Covert Channel to **capture** Signal's **Preamble**
 - **Decode** Payload
 
-![Screen Shot 2021-02-23 at 11.52.52 AM](/Users/vuong/Library/Application Support/typora-user-images/Screen Shot 2021-02-23 at 11.52.52 AM.png)
+![Screen Shot 2021-02-23 at 11.52.52 AM](Screen Shot 2021-02-23 at 11.52.52 AM.png)
 
-## II. Types and Properties of Covert Channels
+## II. Types of Covert Channels
 
 ### 1. Physical / Out-of-Band
 
 - Use a **shared physical medium**
 - **Example**:
   - **Acoustic**: Ultrasonic Wave $\rightarrow$ Microphone
-  - **Radio & Electromagnetic**: Electromagnetic Emanation $\rightarrow$ EM Antena
-  - **Optical**: LED Camera
+  - **Radio & Electromagnetic**: Emanation from Electronic components $\rightarrow$ EM Antena
+  - **Optical**: LED $\rightarrow$ Camera
 
 ### 2. Software / Micro-architectural
 
@@ -61,8 +61,43 @@
 
 ### 3. Network
 
-- Use **traditional network** as a **share medium**
+- Use **traditional network** as a **shared medium**
 - **Example:**
-  - **Modify** custom TCP/IP headers, fileds, timestamps
+  - **Modify** custom TCP/IP headers, fields, timestamps
   - Modify **Package transmission rate**
+
+## III. Properties of Covert Channels
+
+### 1. Signal-to-Noise Ratio
+
+- **Transmission** can be **affected** by **internal/external noise**
+- **Error-correcting code** can correct transmission error
+- $SNR = 10*log (\frac{P_{signal}}{P_{noise}}) dB$
+
+### 2. Modulation Scheme
+
+- **Define** how **binary payload** is **modulated** into the **channel’s signal**
+- Example: **Amplitude**-Shift Keying, **Frequency**-Shift Keying
+
+### 3. Capacity
+
+- **Depend** on the **channel characteristics** and **modulation scheme**
+- $Capacity = Bandwidth * log_2(1 + SNR)$
+
+### 4. Covertness
+
+- **Imperceptible** to **humans present** in the **environment**
+- **Covert** to **adversary aware** of the **channel and modulation**
+
+## IV. Applications of Covert Channels
+
+### 1. Data Exfiltration
+
+### 2. Inter-process Covert channels
+
+### 3. Cross-device tracking
+
+### 4. Location Tracking
+
+### 5. Web Tracking
 
