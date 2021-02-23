@@ -145,14 +145,14 @@
   - **Capture** the signal by analyzing **sensor disturbance**
   - Decode payload
 - **Countermeasure**:
-  - **Restrict** the **freq. of speaker** to the **freq. band**, can hear by human (20-20k KHz)
+  - **Restrict** the **freq. of speaker** to the **freq. band**, that people can hear (20-20k KHz)
   - Smartphone gyroscopes have resonance frequency > 20 KHz
   - Thus prevent an attack
 
 ### 2. Magnetometers-based Covert Channels
 
-- **Transmitter**: malicious app / webpage on a laptop or a smartphone
-  - **Embeds payload** into distinct **CPU activity patterns**
+- **Transmitter**: malicious app on laptop/smartphone
+  - **Embeds payload** into distinct **CPU Activity Patterns**
 
 - **Receiver**: malicious app on user’s smartphone
   - **Record** magnetometer samples
