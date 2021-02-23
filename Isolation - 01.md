@@ -93,11 +93,29 @@
 
 ### 1. Data Exfiltration
 
-### 2. Inter-process Covert channels
+- **Extract sensitive data** from **an isolated machine** **without** use of **traditional communication channel**
 
-### 3. Cross-device tracking
+### 2. Inter-process Covert Channels
+
+- **Communication** between **two processes on same machine**, logically **isolated** by the **OS**
+
+### 3. Cross-device Tracking
+
+- User’s device **receive covert signals** from **another device**, they might be **located near each other** and likely **belong to the same user**
 
 ### 4. Location Tracking
 
+- Use **Ultrasonic Covert Channels** to establish **Location Tracking**
+
 ### 5. Web Tracking
+
+- Use covert channel to **transmit web session ID** from **isolated web page** to **another** webpage
+
+## V. Countermeasures
+
+### 1. Disadvantages
+
+
+
+
 
