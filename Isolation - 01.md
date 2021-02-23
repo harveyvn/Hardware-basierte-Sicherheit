@@ -115,6 +115,19 @@
 
 ### 1. Disadvantages
 
+- Any **shared system resources** can be used to establish Covert Channel
+- Any **Side Channel Leakage** can be used to establish Covert Channel
+
+### 2. Methods
+
+- **Control Access** to **Shared System Resources**
+- **Detect** Covert **Transmission**
+  - Detect **abnormal behavior**
+  - **Monitor** Side Channel **Leakage**
+- **Limit** **Capacity** of Covert Channel
+  - Introduce **noise** and **timing**
+  - Limit **bandwidth**
+
 
 
 
