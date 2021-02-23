@@ -115,8 +115,8 @@
 
 ### 1. Disadvantages
 
-- Any **shared system resources** can be used to establish Covert Channel
-- Any **Side Channel Leakage** can be used to establish Covert Channel
+- Any **shared system resources** can be used to establish Covert Channels
+- Any **Side Channel Leakage** can be used to establish Covert Channels
 
 ### 2. Methods
 
@@ -128,7 +128,38 @@
   - Introduce **noise** and **timing**
   - Limit **bandwidth**
 
+## VI. Sensor-based Covert Channels
 
+- **Smartphones** have many **sensors**
+- Those **sensors** are sensitive to **noise**
+- Those **reaction** can be used to established Covert Channels
+
+### 1. Gyroscopes-based Covert Channels
+
+- **Transmitter**: speaker-equipped device
+  - **Embed payload** into **ultrasonic sounds** at **resonance** frequency
+  - **Play** the **acoustic signal**
+
+- **Receiver**: malicious app on user’s smartphone
+  - **Record** gyroscope samples
+  - **Capture** the signal by analyzing **sensor disturbance**
+  - Decode payload
+- **Countermeasure**:
+  - **Restrict** the **freq. of speaker** to the **freq. band**, can hear by human (20-20k KHz)
+  - Smartphone gyroscopes have resonance frequency > 20 KHz
+  - Thus prevent an attack
+
+### 2. Magnetometers-based Covert Channels
+
+- **Transmitter**: malicious app / webpage on a laptop or a smartphone
+  - **Embeds payload** into distinct **CPU activity patterns**
+
+- **Receiver**: malicious app on user’s smartphone
+  - **Record** magnetometer samples
+  - **Capture** the signal by analyzing **sensor disturbance**
+  - Decode payload
+- **Countermeasure**:
+  - **Restrict** access to magnetometers and magnetic sensors data
 
 
 
