@@ -23,7 +23,7 @@
 - In a cryptographic definition, randomness can prevent attackers from predicting **the outcome of an encryption**. By using as nonce or one-time pads, it can prevent an attack.
 - Attackers win or the attack is successful if he can predict the next bits with probability greater than 50%.
 
-## II. Pseudorandom vs. True number generators
+## II. Pseudorandom vs. True Random number generators
 
 - **Pseudorandom number generators** are based on algorithm through a deterministic process.
   - <u>Advantages</u>: Fast

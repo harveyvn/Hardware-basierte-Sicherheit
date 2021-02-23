@@ -164,7 +164,7 @@
 
 - x86 architecture **extension**
 - **Isolated memory regions** of code and data
-- **CPU controls** enclaves
+- **Every access** to enclaves controlled by **CPU controls** 
 - **Memory** is **protected** by **encryption** and **integrity protection**
 
 #### 3.1. Access Control

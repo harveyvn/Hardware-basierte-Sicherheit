@@ -13,7 +13,7 @@
 ### 3. Trusted Platforms:
 
 - [x] Trusted platform modules & Intel SGX
-- [ ] Attestation
+- [x] Attestation
 
 ### 4. Isolation
 
