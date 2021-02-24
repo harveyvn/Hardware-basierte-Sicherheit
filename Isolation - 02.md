@@ -50,7 +50,7 @@
 
   2. He measures access timing to predefined memory address
 
-  3. If encoded data is already in CPU cache, memory address can be read quickly
+  3. Because correct loaded data is already in CPU cache, memory address can be read quickly
 
   4. Repeat 2 & 3 to read all memory addresses
 
@@ -77,4 +77,8 @@
   - Also **indirect calls** can be **mis-trained**
 
 ### 2. Countermeasures
+
+- No Speculative Execution
+- Insert **instructions** that **stop Speculative Execution**
+- Improve **Branch Prediction**
 
