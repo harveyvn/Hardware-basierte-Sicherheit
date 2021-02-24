@@ -36,14 +36,45 @@
 
 ### 1. Definition
 
-- Exploit **side effect** Out of Order Execution
+- Exploit **Side Effect** Out of Order Execution
+
 - Read **Arbitrary Kernel-Memory Locations**
+
 - It **breaks** all **security mechanism** provided by **Address Space Isolation**
+
 - **Not depend** on **OS** or **SW vulnerabilities**
 
-### 2. Countermeasure
+- **Method**:
+
+  1. Attacker sends code fragment that causes exception
+
+  2. He measures access timing to predefined memory address
+
+  3. If encoded data is already in CPU cache, memory address can be read quickly
+
+  4. Repeat 2 & 3 to read all memory addresses
+
+### 2. Countermeasures
 
 - No Out of Order Execution
 - **Strict Hardware-based** separation of **Kernel** and other **SWs**
 - **Isolation of Kernel-Memory Locations** by using **SW**
+
+## III. Spectre
+
+### 1. Definition
+
+- Exploit **Speculative Execution**
+- **Victim program** is **tricked** into **executing code**
+- Course of attack
+
+  - **Branch Prediction** is **mis-trained** previously
+
+  - **CPU speculatively executes code** which should not be executed
+
+  - Leak information
+
+  - Also **indirect calls** can be **mis-trained**
+
+### 2. Countermeasures
 
