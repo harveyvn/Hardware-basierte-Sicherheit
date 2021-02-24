@@ -11,12 +11,14 @@
 - Those effects can **leak information** about **the computation**, **inputs** and **outputs**; **creating** so called side-channel, during the **computation of cryptographic primitives and tokens**
 - At a result, an attack can **have advantage** and **predict** correctly **value** of **cryptographic components**
 
-### 2. Timing Side-Channel Attack
+### 2. Examples
+
+#### 2.1. Timing Side-Channel Attack
 
 - Observe the **Timing Behavior** of **computation**
 - If the **Timing Behavior** depends on a **cryptographic token**, the token can be leaked
 
-### 3. Power Side-Channel Attack
+#### 2.2. Power Side-Channel Attack
 
 - Observe the **Power Consumption** of **computation**
 - If the **Power Consumption** depends on a **cryptographic token**, the token can be leaked
