@@ -202,7 +202,7 @@
 - **Bootloader Protection**
   - Use PUF response $S$ to generate key $K$ as $K=SHA(S)$ for the encryption of the stage bootloader 
   - Derive another key within the 2^nd^ stage bootloader to **decrypt kernel file**
-  - The firmware can only start on the corresponding device
+  - The **firmware** can only start on the corresponding device
 - **SW integrity Protection**
   - Calculate **checksum** of the **code program** by **hash function** 
   - Bind SW on PUF response
