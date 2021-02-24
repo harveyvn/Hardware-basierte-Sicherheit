@@ -18,5 +18,5 @@
 ### 4. Isolation
 
 - [x] Convert Channels
-- [ ] Microarchitectural attacks
+- [x] Microarchitectural attacks
 

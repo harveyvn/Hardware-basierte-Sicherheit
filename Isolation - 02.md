@@ -66,7 +66,7 @@
 
 - Exploit **Speculative Execution**
 - **Victim program** is **tricked** into **executing code**
-- Course of attack
+- **Method**:
 
   - **Branch Prediction** is **mis-trained** previously
 
